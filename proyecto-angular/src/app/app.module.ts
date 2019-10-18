@@ -20,7 +20,8 @@ import { ErrorComponent } from "./components/error/error.component";
     ContactComponent,
     ErrorComponent
   ],
-  imports: [BrowserModule, routing],
+
+  imports: [BrowserModule, routing, HttpClientModule, FormsModule],
   providers: [appRoutingProviders],
   bootstrap: [AppComponent]
 })

@@ -37,7 +37,7 @@ header {
 
 header ul {
   display: block;
-  width: 38%;
+  width: 37%;
   height: inherit;
   margin: 0px auto;
   margin-top: -3px;
@@ -140,4 +140,65 @@ article.about {
   padding-top: 20px;
   padding-bottom: 30px;
   text-align: justify;
+}
+
+
+/* Sección Formulario*/ 
+.container{
+  padding: 50px;
+  padding-top: 10px;
+}
+
+.container h2{
+  border-bottom: 1px solid #ccc;
+}
+
+form{
+  width: 80%;
+}
+
+form label{
+  display: block;
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+form input[type="text"],
+form input[type="number"],
+form input[type="email"],
+form textarea{
+  width: 40%;
+  padding:5px;
+} 
+
+form button,
+form input[type="submit"]{
+  display: block;
+  font-size: 17px;
+  padding: 10px;
+  margin-top: 15px;
+  color: white;
+  background: rgba(53, 103, 164, 1);
+  border: 1px solid rgba(13, 67, 133, 1);
+  cursor: pointer;
+}
+
+form button:hover,
+form input[type="submit"]:hover{
+  background: rgba(53, 103, 164, 0.8);
+  border: 1px solid rgba(13, 67, 133, 1);
+}
+
+form input[disabled]{
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.formError{
+  font-size: 13px;
+  padding: 3px;
+  background: red;
+  color: whitesmoke;
+  margin-left: 5px;
 }
