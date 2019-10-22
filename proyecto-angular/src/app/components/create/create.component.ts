@@ -28,7 +28,7 @@ export class CreateComponent implements OnInit {
       response => {
         console.log(response);
         if(response.project){
-          this.status = 'Success';
+          this.status = 'success';
         }else{
           this.status = 'failed';
         }

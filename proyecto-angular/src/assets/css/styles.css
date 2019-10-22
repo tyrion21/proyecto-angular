@@ -202,3 +202,24 @@ form input[disabled]{
   color: whitesmoke;
   margin-left: 5px;
 }
+
+.message{
+  padding: 5px;
+  width: 50%;
+  border: 1px solid #eee;
+}
+
+.success{
+  background: green;
+  color: white;
+}
+
+.success a{
+  color: white;
+}
+
+.failed{
+  background: red;
+  color: white;
+}
+
