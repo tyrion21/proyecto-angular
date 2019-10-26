@@ -19,8 +19,7 @@ export class CreateComponent implements OnInit {
     this.project = new Project('','','','',2019,'','');
   }
 
-  ngOnInit() {
-  }
+  ngOnInit() {}
 
   onSubmit(form){
     console.log(this.project);
@@ -29,6 +28,7 @@ export class CreateComponent implements OnInit {
         console.log(response);
         if(response.project){
           this.status = 'success';
+          form.reset();
         }else{
           this.status = 'failed';
         }
@@ -38,5 +38,4 @@ export class CreateComponent implements OnInit {
       }
     );
   }
-
 }
