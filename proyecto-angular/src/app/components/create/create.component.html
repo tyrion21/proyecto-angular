@@ -74,6 +74,7 @@
         placeholder="Subir Imagen"
         #image="ngModel"
         [(ngModel)]="project.image"
+        (change)="fileChangeEvent($event)"
       />
     </p>
     <input type="submit" value="Enviar" [disabled]="!projectForm.form.valid"/>
